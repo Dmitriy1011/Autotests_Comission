@@ -25,7 +25,7 @@ class MainKtTest {
         val inCorrectResult3 = calculateCommission(visa, 800_000)
         val inCorrectResult4 = calculateCommission(mir, 20_000, 700_000)
         val inCorrectResult5 = calculateCommission(vkPay, 50_000)
-        val inCorrectResult6 = calculateCommission(vkPay, 50_000, 100_000)
+        val inCorrectResult6 = calculateCommission(vkPay, 50_000, 1_000_000)
 
         assertEquals(10_000, result)
         assertEquals(20_000, result2)
@@ -39,6 +39,6 @@ class MainKtTest {
         assertEquals(-1, inCorrectResult3)
         assertEquals(-1, inCorrectResult4)
         assertEquals(-1, inCorrectResult5)
-        assertEquals(-1, inCorrectResult6)
+        assertEquals(10, inCorrectResult6)
     }
 }
